@@ -13,6 +13,30 @@ public class CompareNumbers {
    */
   public static Integer max(Integer a, Integer b, Integer c) {
     //TODO: Implement me
-    return null;
+    Integer max=0;
+    if(a>=b)
+    {
+      if(a>=c)
+      {
+        max=a;
+      }
+      else
+      {
+        max=c;
+      }
+    }
+    else
+    {
+      if(b>=c)
+      {
+        max=b;
+      }
+      else
+      {
+        max=c;
+      }
+    }
+    return max;
+    //return null;
   }
 }
