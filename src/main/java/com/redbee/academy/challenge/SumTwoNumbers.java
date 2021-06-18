@@ -1,7 +1,7 @@
 package com.redbee.academy.challenge;
 
-public class SumTwoNumbers {
-
+public class SumTwoNumbers
+{
   /**
    * Method that receives two numbers and returns the
    * sum of both
@@ -10,8 +10,10 @@ public class SumTwoNumbers {
    * @param b - Another Integer Number
    * @return The result of a + b
    */
-  public static Integer sum(Integer a, Integer b) {
-    //TODO: Implement me
-    return null;
-  }
+    public static Integer sum(Integer a, Integer b)
+    {
+      //TODO: Implement me
+      return a+b;
+      //return null;
+    }
 }
