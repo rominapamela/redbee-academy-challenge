@@ -14,29 +14,94 @@ public class CompareNumbers {
   public static Integer max(Integer a, Integer b, Integer c) {
     //TODO: Implement me
     Integer max=0;
-    if(a>=b)
+
+    if (a==null)
     {
-      if(a>=c)
+      if (b==null)
       {
-        max=a;
+        if (c==null)
+        {
+          max=null;
+        }
+        else
+        {
+          max=c;
+        }
       }
       else
       {
-        max=c;
+        if (c==null)
+        {
+          max=b;
+        }
+        else
+        {
+          if (b>=c)
+          {
+            max=b;
+          }
+          else
+          {
+            max=c;
+          }
+        }
       }
     }
     else
     {
-      if(b>=c)
+      if (b==null)
       {
-        max=b;
+        if (c==null)
+        {
+          max=a;
+        }
+        else
+        {
+          if (a>=c)
+          {
+            max=a;
+          }
+          else
+          {
+            max=c;
+          }
+        }
       }
       else
       {
-        max=c;
+        if (c==null)
+        {
+          if (a>=b)
+          {
+            max=a;
+          }
+          else
+          {
+            max=b;
+          }
+        }
+        else
+        {
+          if (a>=b)
+          {
+            max = a;
+          }
+          else
+          {
+            if (b>=c)
+            {
+              max=b;
+            }
+            else
+            {
+              max=c;
+            }
+          }
+        }
       }
     }
+
     return max;
-    //return null;
   }
 }
+
