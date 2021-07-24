@@ -17,15 +17,33 @@ public class CompareArrayNumbers {
   public static List<Integer> max(List<Integer> a, List<Integer> b) {
     //TODO: Implement me
     List<Integer> maximos=new ArrayList<Integer>();
-    Collections.sort(a);
-    Integer max_a = a.get(a.size()-1);
-    Collections.sort(b);
-    Integer max_b = b.get(b.size()-1);
-    maximos.add(max_a);
-    maximos.add(max_b);
+    int i=0;
+    while (i<a.size() && i<b.size())
+    {
+      if (a.get(i)>=b.get(i))
+      {
+        maximos.add(a.get(i));
+      }
+      else
+      {
+        maximos.add(b.get(i));
+      }
+      i++;
+    }
+    if (i>=b.size())
+    {
+      for(int j=i;j<a.size();j++)
+      {
+        maximos.add(a.get(i));
+      }
+    }
+    else
+    {
+      for(int j=i;j<b.size();j++)
+      {
+        maximos.add(b.get(i));
+      }
+    }
     return maximos;
   }
-
-
-
 }
