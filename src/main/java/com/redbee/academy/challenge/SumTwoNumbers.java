@@ -13,7 +13,27 @@ public class SumTwoNumbers
     public static Integer sum(Integer a, Integer b)
     {
       //TODO: Implement me
-      return a+b;
-      //return null;
+      if (a == null && b==null)
+      {
+        return null;
+      }
+      else
+      {
+        if (a==null)
+        {
+          return b;
+        }
+        else
+        {
+          if (b==null)
+          {
+            return a;
+          }
+          else
+          {
+            return a+b;
+          }
+        }
+      }
     }
 }
