@@ -1,7 +1,3 @@
-package com.redbee.academy.challenge;
-
-import java.util.List;
-
 public class SumArrayNumbers {
 
   /**
@@ -19,6 +15,5 @@ public class SumArrayNumbers {
       suma=suma+array.get(i);
     }
     return suma;
-    //return null;
   }
 }
