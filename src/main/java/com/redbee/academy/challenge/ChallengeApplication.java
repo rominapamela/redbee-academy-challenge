@@ -11,7 +11,9 @@ public class ChallengeApplication {
 
 	public static void main(String[] args)
 	{
-		//SpringApplication.run(ChallengeApplication.class, args);
+		SpringApplication.run(ChallengeApplication.class, args);
+		System.out.println();
+
 		int nr1=2;
 		int nr2=5;
 		SumTwoNumbers suma = new SumTwoNumbers();
@@ -37,12 +39,12 @@ public class ChallengeApplication {
 		lista1.add(2);
 		List<Integer> lista2=new ArrayList<Integer>();
 		lista2.add(9);
-		lista2.add(9);
+		lista2.add(11);
 		lista2.add(1);
 		System.out.println("La lista 1 es: " + lista1);
 		System.out.println("La lista 2 es: " + lista2);
 		CompareArrayNumbers compararArrays = new CompareArrayNumbers();
-		System.out.println("La lista con el maximo de ambas listas es: " + compararArrays.max(lista1,lista2));
+		System.out.println("La lista con el maximo de ambas indices es: " + compararArrays.max(lista1,lista2));
 
 	}
 
